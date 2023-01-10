@@ -1,0 +1,304 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+}
+/* header part */
+
+header{
+  background-color: coral;
+  /* box-sizing: border-box; */
+  position: fixed;
+  width: 100%;
+  height: 9rem;
+  box-sizing: border-box;
+  z-index: 1;
+  top: 0;
+}
+
+#logo_img {
+  width: 10vw;
+  display: inline-block;
+  
+}
+
+#gym_name{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 50px;
+  font-style: oblique;
+  /* font-variant: small-caps; */
+  text-align: center;
+  margin-left: 18vw;
+  display: inline-block;
+  vertical-align:top;
+  
+  text-transform: uppercase;
+  word-spacing: 3vw;
+  text-shadow: 4px 4px 4px darkred;
+
+
+}
+
+ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  background-color:whitesmoke;
+  /* overflow: hidden; */
+  /* position: fixed; */
+  width: 100%;
+  top: 1;
+}
+li{
+  display: inline;
+  border-right: 1px solid whitesmoke;
+}
+li:last-child{
+  border-right: none;
+}
+li a:link, a:visited {
+  color: rgba(0, 0, 0, 0.807);
+  padding: 1vw 3vw;
+  text-decoration: none;
+  display:inline-block;
+  /* border: 2px solid green; */
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+li a.active{
+  background-color: #04AA6D;
+  color: white;
+}
+.right {
+  float: right;
+}
+li a:hover:not(.active), a:active {
+  color: white;
+  background-color:#555;
+}
+nav {
+  margin-bottom: 1rem;
+  position: fixed;
+  width: 100%;
+  height: 2rem;
+  
+}
+
+@media screen and(max-width:400px) {
+  ul.ul{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+.registration {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  z-index: 0;
+  margin-top: 15rem;
+}
+.red {
+  color: red;
+}
+
+.note {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.blue {
+  color: rgb(103, 183, 96);
+}
+#para1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color:#555;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#timing {
+  color: rgb(168, 74, 74);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  background-color: lightseagreen;
+  padding: 2vw;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-variant: small-caps;
+  border-radius: 4px;
+  /* margin: auto; */
+  
+}
+
+ /* form start */
+
+ .cont {
+  background-color:whitesmoke;
+  border-radius: 4px;
+  box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);;
+  
+ }
+ .row {
+  box-sizing: border-box;
+  margin-left: 1rem;
+  margin-right: 1rem;
+ }
+
+ .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 2rem;
+
+ }
+
+ .col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 2rem;
+ }
+
+ .col-35 {
+  float: left;
+  width: 35%;
+  margin-top: 2rem;
+  display: inline;
+ }
+
+ label {
+  padding: 12px 12px 12px 2px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* resize: vertical; */
+ }
+ input[type=text]:focus {
+  background-color: #04aa6d1b;
+ }
+
+ input[type=text]:hover {
+  box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+ select:hover{
+  box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+ input[type=number] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+ }
+ input[type=number]:hover {
+  box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+ input[type=radio] {
+  padding: 10px;
+  
+ }
+ 
+
+ input[type=date] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+ }
+ input[type=date]:hover{
+  box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+ input[type=tel] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+ }
+ input[type=tel]:hover{
+  box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+ input[type=email] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+ }
+ input[type=email]:hover{
+  box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+ .submit {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: all 0.5s;
+  cursor: pointer;
+  width: 30%;
+  margin-top: 4rem;
+ margin-left: 12rem;
+ }
+
+ .submit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+
+ .submit span::after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+ }
+
+ .submit:hover span {
+  padding-right: 25px;
+ }
+
+ .submit:hover span::after {
+  opacity: 1;
+  right: 0;
+ }
+ .row::after {
+  display: table;
+  clear: both;
+ }
+
+ footer{
+  
+  background-color: rgb(26, 25, 25);
+  width: 100%;
+  height: 6rem;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  margin-top: 1rem
+ }

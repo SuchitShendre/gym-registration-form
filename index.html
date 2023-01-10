@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jaguar GYM | HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8620574935.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo_img" src="gym_logo.png" alt="gym logo">
+        <h1 id="gym_name">jaguar gym</h1>
+        <nav class="header_nav">
+            <ul class="ul">
+                <li><a class="active" href="index.html">MEMBERSHIP</a></li>
+                <li><a href="#">PLAN</a></li>
+                <li><a href="#">EXPLORE</a></li>
+                <li><a class="right" href="#">ME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="registration">
+            <h2 class="note"><span class="red">NOTE</span>: This form is for <em class="red">NEW MEMBERS</em> Only</h2>
+            <p id="para1">For membership renewals, please use our <span class="blue">Online Membership Renewal
+                    Form</span> Or approch our front desk personaly during staffed hours.</p>
+
+            <p id="timing">THE GYM staffed hours:Weekdays 6am to 12 pm | 4pm to 8pm </p>
+            <h3>Membership Registration From</h3>
+            <div class="cont">
+                <form action="">
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="f_name">First Name</label>
+
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="f_name" name="first name" placeholder="ex. Suchit" required
+                                autofocus>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="m_name">Middel Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="m_name" name="Middel name" placeholder="ex. Subhashrao" required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="l_name">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="l_name" name="last name" placeholder="ex. Shendre" required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="mo_name">Mother Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="mo_name" name="mother name" placeholder="ex. Vandane" required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fa_name">Father Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fa_name" name="Father name"
+                                placeholder="ex. Subhashrao vasantrao shendre" required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Do You Have Aadhar card</label>
+                        </div>
+                        <div class="col-75">
+
+                            <input type="radio" id="aadhar_y" name="aadhar number" value="yes">
+                            <label for="aadhar_y">YES</label>
+
+                            <input type="radio" id="aadhar_N" name="aadhar number" value="no">
+                            <label for="aadhar_N">NO</label>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="aadhar_number">Aadhar Numbaer</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="aadhar_number" name="aahar number" maxlength="12" minlength="12"
+                                placeholder="ex. 3822-5689-2145" required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="dob">Date of Birth (DD/MM/YYYY)</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" id="dob" name="date of birth" required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Gender</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="mob">Mobile Number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="tel" id="mob" name="mobile number" minlength="10" maxlength="10"
+                                pattern="[0-9]+" required
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email ID</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="email id" value="@gmail.com" required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="state">State of Permanant Address</label>
+                        </div>
+                        <div class="col-75">
+                            <select name="state" id="state">
+                                <option value="">--Select--</option>
+                                <option value="1">Andaman and Nicobar Islands</option>
+                                <option value="2">Andhra Pradesh</option>
+                                <option value="3">Arunachal Pradesh</option>
+                                <option value="4">Assam</option>
+                                <option value="5">Bihar</option>
+                                <option value="6">Chandigarh</option>
+                                <option value="7">Chhattisgarh</option>
+                                <option value="8">Dadra and Nagar Haveli and Daman and Diu</option>
+                                <option value="10">Delhi</option>
+                                <option value="11">Goa</option>
+                                <option value="12">Gujarat</option>
+                                <option value="13">Haryana</option>
+                                <option value="14">Himachal Pradesh</option>
+                                <option value="15">Jammu and Kashmir</option>
+                                <option value="16">Jharkhand</option>
+                                <option value="17">Karnataka</option>
+                                <option value="18">Kerala</option>
+                                <option value="19">Lakshadweep</option>
+                                <option value="20">Madhya Pradesh</option>
+                                <option value="21">Maharashtra</option>
+                                <option value="22">Manipur</option>
+                                <option value="23">Meghalaya</option>
+                                <option value="24">Mizoram</option>
+                                <option value="25">Nagaland</option>
+                                <option value="26">Odisha</option>
+                                <option value="27">Puducherry</option>
+                                <option value="28">Punjab</option>
+                                <option value="29">Rajasthan</option>
+                                <option value="30">Sikkim</option>
+                                <option value="31">Tamil Nadu</option>
+                                <option value="32">Telangana</option>
+                                <option value="33">Tripura</option>
+                                <option value="34">Uttar Pradesh</option>
+                                <option value="35">Uttarakhand</option>
+                                <option value="36">West Bengal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="address1">Addreaa Line 1</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="address1" name="Address"
+                                placeholder="Enter your Permanant address here" required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="address2">Addreaa Line 2</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="address2" name="Address"
+                                placeholder="Enter your Permanant address here" required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="city" name="city"
+                             required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="district">district</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="district" name="district"
+                             required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="taluka">Taluka</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="taluka" name="taluka"
+                             required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="pin">Pin Code</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="Pin" name="pin Code" maxlength="6" minlength="6" 
+                            placeholder="ex. 3822" required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="age">Select Your Age (in Year)</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="age" name="age" required>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="height">Select Your Height (in Ft & In)</label>
+                        </div>
+                        <div class="col-35">
+                            <input type="number" id="height" name="height" max="7" required>
+                            
+                        </div>
+                        <div class="col-35">
+                            <input type="number" id="height" name="height" max="11" required>
+                            
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label>What is your Goal</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" id="gain" name="weight" value="gain">
+                            <label for="gain">Weight Gain</label>
+                            <input type="radio" id="loose" name="weight" value="loose">
+
+                            <label for="loose">Weight loose</label>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Preferable Shift</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" id="morning" name="shift" value="morning">
+                            <label for="morning">Morning</label>
+                            <input type="radio" id="evening" name="shift" value="evening">
+
+                            <label for="evening">Evening</label>
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fitness">Current Fitness Level</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="range" id="fitness" max="10" min="1">
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="emob">Emergency Contact Number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="tel" id="emob" name="emergency mobile number" minlength="10" maxlength="10"
+                                pattern="[0-9]+" required
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <!-- input field start -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="E_name">Emergency Contact Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="E_name" name="Emergency name" >
+                        </div>
+                    </div>
+                    <!-- input field end -->
+
+                    <button class="submit" style="vertical-align: middle;"><span>Submit</span> </button>
+
+                </form>
+                
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <i class="fas fa-copyright"></i>
+        <span>Jaguar GYM Ltd | All Right Reserved</span>
+        <i class="fas fa-instagram"></i>
+    </footer>
+
+</body>
+
+</html>
